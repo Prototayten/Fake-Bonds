@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- This is the HTML structure for the Fake Bonds page -->
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonds</title>
+    
+    
+    <style>
+    /* This is CSS styling for the Bonds webpage */
+      body{
+        background: #0d0d12;
+        color: #eee;
+        font-family: system-ui, sans-serif;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      .row{
+          background: #17171f;
+          border-radius: 14px;
+          margin-bottom: 10px;
+          padding: 10px;
+          display: flex;
+          gap: 14px;
+          align-items: center;
+        }
+
+      ul{
+          list-style: none;
+          padding-left: 0;
+        }
+
+      .name{
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+      .msg{
+          font-size: 13px;
+          color: #9b9baa;       
+        }
+
+      .dot{
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          background: #2f6df6;
+          flex-shrink: 0;
+        }
+
+      #search{
+        background: #17171f;
+        border: none;
+        border-radius: 12px;
+        width: 100%;
+        padding: 15px 20px;
+        color: #eee;
+      }
+    </style>
+  </head>
+
+  <!-- This is the main body of the webpage -->
+  <body>
+    <!-- This is the first Navigation Screen with HTML -->
+    <div id="navscreen">
+        <h1>Bonds</h1>
+        <input type="text" placeholder="search" id="search">
+        
+        <ul>
+          <li id="solace" class="row"> 
+            <div class="dot"></div>
+            <span class="name">Solace</span> 
+            <p class="msg">You're in your head again. You're thinking too much Tayten. </p>
+          </li>
+
+          <li id="tayten" class="row">
+            <div class="dot"></div>
+            <span class="name">Tayten</span> 
+            
+            <p class="msg">I know, I know. It's just hard to shut off sometimes. </p>
+          </li>
+
+          <li id="aiya" class="row">
+            <div class="dot"></div>
+            <span class="name">Aiya</span> 
+            
+            <p class="msg">You gotta get out of your head Tayten! </p>
+          </li>
+          
+          <li id="gemma" class="row"> 
+            <div class="dot"></div>
+            <span class="name">Gemma</span> 
+            <p class="msg">Don't stay stay here, forever in your head Tayten. </p>
+          </li>
+        </ul>    
+    </div>
+    
+  <!-- This is the second screen (Chat Screen) -->
+    <div id="chatscreen">
+
+      <h1>Chat</h1>
+
+        <div id="messages">
+
+          <p>Solace: You're in your head again.</p>
+          <p>Tayten: I know.</p>
+          <p>Solace: You have to escape.</p>
+
+        </div>
+
+      <input type="text" placeholder="Type a message">
+      <button>Send</button>
+
+    </div>
+
+  </body>
+
+</html>
